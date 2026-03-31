@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "framework": "vite",
+  "installCommand": "cd \"virtu-lab-frontend\" && npm install",
+  "buildCommand": "cd \"virtu-lab-frontend\" && npm run build",
+  "outputDirectory": "virtu-lab-frontend/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+
