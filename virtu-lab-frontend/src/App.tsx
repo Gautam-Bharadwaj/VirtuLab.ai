@@ -1,3 +1,10 @@
+/**
+ * Main Application Root Component
+ * -------------------------------
+ * Orchestrates the primary routing and global initialization for VirtuLab.
+ * includes role-based session management, dynamic laboratory activation, 
+ * and global alerting for experimental failures.
+ */
 import { Routes, Route, useParams } from 'react-router-dom'
 import { useEffect } from 'react'
 import { LabShell } from './components/ui/LabShell'
