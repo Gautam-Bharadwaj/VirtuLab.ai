@@ -1,3 +1,11 @@
+/**
+ * Decorative Train Banner Component
+ * ---------------------------------
+ * A thematic UI element featuring a continuous parallax animation 
+ * of a stylized train. serves as a visual bridge between the 
+ * Landing Navbar and Hero sections, incorporating subtle 
+ * micro-interactions and gradient-driven aesthetics.
+ */
 import React from 'react';
 import { motion } from 'framer-motion';
 
