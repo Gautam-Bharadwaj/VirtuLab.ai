@@ -1,3 +1,10 @@
+/**
+ * Firebase Core Configuration & Client
+ * ------------------------------------
+ * Initializes and exports the Firebase application, authentication service, 
+ * and Firestore database instance. integrates environment-driven 
+ * configurations for secure and scalable backend connectivity.
+ */
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
