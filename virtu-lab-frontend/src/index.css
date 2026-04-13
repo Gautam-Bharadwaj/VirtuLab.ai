@@ -1,3 +1,10 @@
+/*
+ * Global Laboratory Design System
+ * -------------------------------
+ * Defines the core visual tokens, glassmorphic UI components, 
+ * and custom animation frameworks for the VirtuLab platform.
+ * integrates Tailwind directives with curated scientific utility classes.
+ */
 /* ─── Google Font ─── */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
