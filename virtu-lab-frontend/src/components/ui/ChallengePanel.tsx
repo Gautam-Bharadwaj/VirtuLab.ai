@@ -1,3 +1,11 @@
+/**
+ * AI-Driven Challenge Panel Component
+ * -----------------------------------
+ * Sets specific scientific objectives for students.
+ * Features automated evaluation using dynamic expression computing, 
+ * progress tracking based on target values, and an interactive 
+ * hint system for adaptive learning.
+ */
 import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLabStore, ChallengeData, LabInputs } from '../../store/useLabStore';
