@@ -1,3 +1,10 @@
+/**
+ * Ohm's Law Simulation Component
+ * ------------------------------
+ * Visualizes the relationship between Voltage, Resistance, and Current.
+ * Features real-time calculation, failure state detection (short circuit/overload),
+ * and an animated electron flow visualization.
+ */
 import React, { useEffect } from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
