@@ -1,3 +1,10 @@
+/**
+ * Gravitational Force & Orbit Simulation Component
+ * -----------------------------------------------
+ * Simulates planetary orbits based on Newton's Law of Universal Gravitation.
+ * Features an interactive orbital visualizer with real-time force 
+ * calculation and elliptical path tracing.
+ */
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLabStore } from '../../store/useLabStore';
