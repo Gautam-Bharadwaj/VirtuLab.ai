@@ -340,3 +340,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 │   └── public/             # Static assets
 └── README.md               # Project documentation
 ```
+
+## 20. License
+
+Distributed under the MIT License. See `LICENSE` for more information.
