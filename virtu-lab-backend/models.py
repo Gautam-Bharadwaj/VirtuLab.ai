@@ -28,21 +28,36 @@ class HintResponse(BaseModel):
     level: int
     follow_up: Optional[str] = None
 class ReportRequest(BaseModel):
+    """
+    Schema for requesting a lab report summary.
+    """
     simulation: str
     observations: List[Dict[str, Any]]
     failures: List[Dict[str, str]]
     duration: int
     score: int
+
 class ReportResponse(BaseModel):
+    """
+    Schema for a generated lab report.
+    """
     aim: str
     result: str
     struggles: List[str]
     viva_questions: List[str]
+
 class ChallengeRequest(BaseModel):
+    """
+    Schema for requesting a new experimental challenge.
+    """
     simulation: str
     completed_challenges: List[str] = []
     skill_level: Optional[str] = "intermediate"
+
 class ChallengeResponse(BaseModel):
+    """
+    Schema for a challenge definition.
+    """
     id: str
     title: str
     description: str
@@ -54,7 +69,11 @@ class ChallengeResponse(BaseModel):
     proof: str
     fixed_params: Dict[str, float] = {}
     compute: str
+
 class ExperimentRecord(BaseModel):
+    """
+    Data model for saving a single experiment session log.
+    """
     student_id: str
     simulation: str
     score: int
@@ -65,7 +84,11 @@ class ExperimentRecord(BaseModel):
     challenge_completed: Optional[str] = None
     prediction_accuracy: Optional[float] = None
     timestamp: Optional[str] = None
+
 class StudentProgress(BaseModel):
+    """
+    Data model representing a student's overall progress and strengths/weaknesses.
+    """
     student_id: str
     total_experiments: int
     total_time: int
