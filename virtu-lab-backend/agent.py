@@ -13,7 +13,13 @@ from config import GEMINI_API_KEY
 
 _model = None
 def get_model():
+    """
+    Initializes and returns the Gemini Generative Model.
+    Uses 'gemini-2.0-flash' for low latency and high performance.
     
+    Returns:
+        genai.GenerativeModel: The initialized model object or None if initialization fails.
+    """
     global _model
     if _model is not None:
         return _model
@@ -29,8 +35,18 @@ def get_model():
     except Exception as e:
         print(f"⚠️  Gemini init failed: {e}")
         return None
+
 def call_gemini(prompt: str, max_tokens: int = 300) -> Optional[str]:
+    """
+    Utility function to call the Gemini API with a given prompt.
     
+    Args:
+        prompt (str): The text prompt to send to the model.
+        max_tokens (int): Maximum output tokens for the response. Defaults to 300.
+        
+    Returns:
+        Optional[str]: The generated text response or None if an error occurs.
+    """
     model = get_model()
     if not model:
         return None
