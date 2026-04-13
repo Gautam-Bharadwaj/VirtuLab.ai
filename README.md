@@ -253,8 +253,8 @@ _(Add Postman / Thunder Client screenshots here showing a JSON payload sent and 
 | Member Name  | Role & Difficulty Level                                | Responsibilities                                                                                                                                                                                   |
 | ------------ | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Ayush**    | **Simulation & Agent Architect (High Difficulty)**     | Writing the core mathematical science engines (Physics/Chem/Bio) in JS. Managing Zustand state, defining Failure States, and architecting the LangGraph Socratic logic and Gemini prompts.         |
-| **Kumar Gautam** | **Infrastructure & API Lead (Medium-High Difficulty)** | Setting up FastAPI/Node backend, managing Supabase schema and REST endpoints. Configuring `vite-plugin-pwa` Service Workers to ensure the offline fallback logic works flawlessly.                 |
-| **Isha**         | **Frontend & Analytics Lead (Medium Difficulty)**      | Building the responsive Next.js UI shell. Integrating Recharts to build the Teacher Misconception Dashboard and the Student Skill Radar. Connecting frontend charts to live Supabase data streams. |
+| **Member 2** | **Infrastructure & API Lead (Medium-High Difficulty)** | Setting up FastAPI/Node backend, managing Supabase schema and REST endpoints. Configuring `vite-plugin-pwa` Service Workers to ensure the offline fallback logic works flawlessly.                 |
+| **Member 3** | **Frontend & Analytics Lead (Medium Difficulty)**      | Building the responsive Next.js UI shell. Integrating Recharts to build the Teacher Misconception Dashboard and the Student Skill Radar. Connecting frontend charts to live Supabase data streams. |
 
 ---
 
