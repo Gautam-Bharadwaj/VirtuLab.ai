@@ -1,4 +1,10 @@
-
+"""
+VirtuLab Backend Configuration
+------------------------------
+Manages environment variables and global constants for the backend API.
+integrates seamlessly with .env files for secure credential management 
+across Gemini AI, Supabase, and cross-origin resource sharing (CORS).
+"""
 import os
 from dotenv import load_dotenv
 
