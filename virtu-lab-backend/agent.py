@@ -1,3 +1,10 @@
+"""
+Agent Logic for VirtuLab.ai
+---------------------------
+This module handles the integration with Google Gemini AI to provide Socratic hints,
+generate lab reports, and create dynamic challenges for students.
+It supports both online (AI-driven) and offline (template-driven) modes.
+"""
 
 import json
 import random
