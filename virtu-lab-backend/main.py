@@ -1,3 +1,9 @@
+"""
+VirtuLab API Main Entry Point
+-----------------------------
+This module defines the FastAPI application and its core endpoints for
+AI hints, progress tracking, and simulation metadata.
+"""
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
