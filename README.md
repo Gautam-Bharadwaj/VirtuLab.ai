@@ -1,4 +1,4 @@
-# VirtuLab.ai — The Intelligent Science Metaverse 🔬
+# VirtuLab.ai — The Intelligent Science Metaverse
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -12,27 +12,27 @@ VirtuLab.ai is a state-of-the-art virtual laboratory platform designed to bring 
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🧪 Immersive Simulation Suite
+### Immersive Simulation Suite
 Conduct complex experiments across Physics, Chemistry, and Biology with real-time mathematical precision:
 - **Physics**: Ohm's Law & Resistance, Projectile Motion, Optics Bench, Logic Gates.
 - **Chemistry**: Acid-Base Titration, Flame Test, Periodic Table Trends, Reaction Rates.
 - **Biology**: Mitosis visualization and Enzyme Kinetics.
 
-### 🤖 Intelligent Socratic Mentoring
+### Intelligent Socratic Mentoring
 Powered by **Google Gemini 2.0 Flash**, our AI tutor observes your experimental state and guides you through mistakes using Socratic questioning—asking the right questions rather than just giving the answers.
 
-### 📊 Professional Analytics
+### Professional Analytics
 - **Student Skill Radar**: Multi-dimensional visualization of performance across conceptual understanding, procedural accuracy, and time management.
 - **Teacher Analytics Dashboard**: Real-time misconception heatmaps and session monitoring for classroom-level insights.
 
-### 📶 Offline-First Resilience
+### Offline-First Resilience
 Built as a **Progressive Web App (PWA)**, VirtuLab caches core simulation engines and Socratic decision trees locally. Learn and experiment in "Airplane Mode," with data syncing automatically when you're back online.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Layer | Technologies |
 | :--- | :--- |
@@ -44,7 +44,7 @@ Built as a **Progressive Web App (PWA)**, VirtuLab caches core simulation engine
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 .
@@ -69,7 +69,7 @@ Built as a **Progressive Web App (PWA)**, VirtuLab caches core simulation engine
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v18+)
@@ -103,7 +103,7 @@ Built as a **Progressive Web App (PWA)**, VirtuLab caches core simulation engine
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] **Vision-to-Sim**: Capture textbook diagrams to generate interactive digital labs.
 - [ ] **Collaborative Labs**: Real-time multi-user experimental sessions using WebSockets.
@@ -112,13 +112,13 @@ Built as a **Progressive Web App (PWA)**, VirtuLab caches core simulation engine
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-## 🤝 Acknowledgements
+## Acknowledgements
 
 *   [Google Gemini API](https://ai.google.dev/) for intelligent Socratic guidance.
 *   [Supabase](https://supabase.com/) for resilient data synchronization.
