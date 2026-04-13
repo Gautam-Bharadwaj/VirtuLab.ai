@@ -1,3 +1,10 @@
+/**
+ * Digital Logic Gates Simulation Component
+ * ----------------------------------------
+ * Interactive sandbox for exploring fundamental logic gates (AND, OR, NOT, etc.).
+ * Features a real-time circuit visualization with animated signals, 
+ * interactive inputs, and a dynamically updating truth table.
+ */
 import React, { useState, useMemo } from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
