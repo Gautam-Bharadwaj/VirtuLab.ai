@@ -1,3 +1,10 @@
+/**
+ * Periodic Table Trends & Telemetry Simulation
+ * -------------------------------------------
+ * Interactive exploration of chemical elements and their properties.
+ * Visualizes atomic structure (nucleus and electron shells), atomic mass, 
+ * electronegativity, and periodic trends for all 118 elements.
+ */
 import React, { useMemo } from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
