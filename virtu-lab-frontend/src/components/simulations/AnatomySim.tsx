@@ -1,3 +1,10 @@
+/**
+ * Human Anatomy Observatory Simulation Component
+ * ---------------------------------------------
+ * Provides a 3D-like structural visualization of human organs.
+ * Allows for rotational exploration and provides physiological 
+ * details for key biological systems like the Brain and Heart.
+ */
 import React from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
