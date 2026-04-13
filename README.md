@@ -1,5 +1,11 @@
 # VirtuLab
 
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-8E75E9?style=for-the-badge&logo=google&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
 Bridging India's practical education divide through immersive, intelligent, and accessible lab simulations — for every student, on every device, anywhere.
 
 ---
