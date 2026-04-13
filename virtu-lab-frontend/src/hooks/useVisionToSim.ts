@@ -1,3 +1,10 @@
+/**
+ * Vision-to-Simulation Integration Hook
+ * -------------------------------------
+ * A prototype hook designed to bridge physical world inputs with 
+ * virtual laboratory parameters. Currently serves as a structural stub 
+ * for future multimodal AI analysis features.
+ */
 import { useState } from "react";
 
 export function useVisionToSim() {
