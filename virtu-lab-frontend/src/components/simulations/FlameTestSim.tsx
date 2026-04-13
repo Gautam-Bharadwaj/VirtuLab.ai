@@ -1,3 +1,10 @@
+/**
+ * Emission Spectroscopy & Flame Test Simulation Component
+ * -------------------------------------------------------
+ * Simulates the characteristic emission spectra of various metal ions.
+ * Features a dynamic Bunsen burner flame visualization that changes 
+ * color when samples are introduced, illustrating electron energy levels.
+ */
 import React from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
