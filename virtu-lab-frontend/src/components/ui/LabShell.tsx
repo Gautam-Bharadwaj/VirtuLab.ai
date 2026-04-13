@@ -1,3 +1,11 @@
+/**
+ * Laboratory Shell (Main Layout) Component
+ * ----------------------------------------
+ * Orchestrates the primary user interface for all experiments.
+ * Manages the responsive layout between the Control Sidebar, 
+ * Simulation Viewport, and AI Tutor/Challenge panels. 
+ * includes global overlays for Skill Analysis and Lab Reports.
+ */
 import React, { ReactNode } from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { Navbar } from './Navbar';
