@@ -1,3 +1,9 @@
+"""
+Database Layer for VirtuLab.ai
+------------------------------
+Handles persistence of student experiment logs and progress tracking using Supabase.
+Includes an in-memory fallback for local development or offline use.
+"""
 
 from config import SUPABASE_URL, SUPABASE_KEY
 from datetime import datetime, timezone
@@ -5,7 +11,12 @@ import json
 
 _client = None
 def get_client():
+    """
+    Initializes and returns a Supabase client singleton.
     
+    Returns:
+        supabase.Client: The Supabase client object or None if configuration is missing.
+    """
     global _client
     if _client is not None:
         return _client
