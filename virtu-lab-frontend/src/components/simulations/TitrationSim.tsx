@@ -1,3 +1,10 @@
+/**
+ * Acid-Base Titration Simulation Component
+ * ----------------------------------------
+ * Simulates a strong acid (HCl) vs strong base (NaOH) titration.
+ * Dynamically calculates pH based on volume added, visualizes chemical 
+ * indicator color changes, and monitors for extreme pH failure states.
+ */
 import React, { useMemo, useEffect } from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
