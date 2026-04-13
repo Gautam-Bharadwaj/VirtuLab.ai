@@ -1,3 +1,11 @@
+/**
+ * Multi-Disciplinary Laboratory Configuration
+ * -------------------------------------------
+ * Central source of truth for all laboratory types and their parameters.
+ * includes catalog metadata, default input states, prediction engine 
+ * configurations, and report exclusion rules for Physics, Chemistry, 
+ * and Biology simulations.
+ */
 export type LabType =
   | "ohm-law" | "projectile-motion" | "optics-bench" | "logic-gates"
   | "titration" | "flame-test" | "periodic-table" | "reaction-rate"
