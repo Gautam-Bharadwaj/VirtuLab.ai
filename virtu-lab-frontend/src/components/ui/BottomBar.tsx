@@ -1,3 +1,10 @@
+/**
+ * Bottom Bar UI Component
+ * -----------------------
+ * Displays real-time laboratory telemetry and statistics.
+ * Features a dynamic layout that adapts to the AI Tutor's presence, 
+ * illustrating trends (up/down/stable) for various scientific metrics.
+ */
 import React from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
