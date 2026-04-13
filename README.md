@@ -344,3 +344,10 @@ Follow these instructions to get a copy of the project up and running on your lo
 ## 20. License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+## 21. Acknowledgements
+
+*   [Google Gemini API](https://ai.google.dev/)
+*   [React-Three-Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) (inspiration)
+*   [Font Awesome](https://fontawesome.com)
+*   [Img Shields](https://shields.io)
