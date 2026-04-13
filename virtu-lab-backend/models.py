@@ -1,8 +1,9 @@
 """
-Pydantic Models for VirtuLab API
---------------------------------
-This module defines the request and response schemas for all API endpoints,
-ensuring type safety and validation.
+VirtuLab API Data Models
+------------------------
+Defines the Pydantic schemas for request and response validation.
+Ensures strict type-safety across the API for AI tutoring, report 
+generation, challenge sequencing, and persistent progress tracking.
 """
 
 from pydantic import BaseModel
