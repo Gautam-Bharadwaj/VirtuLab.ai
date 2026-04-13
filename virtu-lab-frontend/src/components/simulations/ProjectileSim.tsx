@@ -1,3 +1,10 @@
+/**
+ * Projectile Motion Simulation Component
+ * -------------------------------------
+ * Simulates classical two-dimensional kinematics.
+ * Graphs the parabolic trajectory based on initial velocity and launch angle,
+ * calculates Max Height, Range, and Time of Flight, and identifies failure cases.
+ */
 import React, { useMemo, useEffect } from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
