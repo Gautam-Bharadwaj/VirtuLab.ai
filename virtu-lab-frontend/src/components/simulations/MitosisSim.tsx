@@ -1,3 +1,10 @@
+/**
+ * Cellular Division (Mitosis) Simulation Component
+ * -----------------------------------------------
+ * Visualizes the different stages of the mitotic cell cycle.
+ * From Interphase to Cytokinesis, the simulation illustrates 
+ * chromosome replication, alignment, and separation.
+ */
 import React from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
