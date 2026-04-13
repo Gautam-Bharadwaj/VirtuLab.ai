@@ -322,3 +322,21 @@ Follow these instructions to get a copy of the project up and running on your lo
    pip install -r requirements.txt
    ```
 4. Set up environment variables in .env files.
+
+## 19. Project Structure
+
+```text
+.
+├── .github/                # GitHub specific configuration
+├── virtu-lab-backend/      # FastAPI Python backend
+│   ├── agent.py            # LangGraph agent logic
+│   ├── main.py             # API entry point
+│   └── models.py           # Data models
+├── virtu-lab-frontend/     # React/Vite frontend
+│   ├── src/
+│   │   ├── components/     # UI and Simulation components
+│   │   ├── hooks/          # Custom React hooks
+│   │   └── store/          # Zustand state management
+│   └── public/             # Static assets
+└── README.md               # Project documentation
+```
