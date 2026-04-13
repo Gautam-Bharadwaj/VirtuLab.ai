@@ -142,3 +142,6 @@ def get_progress(student_id: str):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=PORT, reload=True)
+
+# TODO (Roadmap): Implement multi-modal vision analysis (multimodal gemini-2.0)
+# TODO (Roadmap): Add real-time collaborative lab sessions (WebSocket integration)
