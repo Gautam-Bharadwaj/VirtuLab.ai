@@ -1,3 +1,11 @@
+/**
+ * Hero Section (Landing) Component
+ * --------------------------------
+ * The primary visual centerpiece of the VirtuLab landing page.
+ * features a high-performance Canvas-based animation system for 
+ * real-time asset sequencing, dynamic theme interpolation based 
+ * on animation frames, and responsive layout for core CTA modules.
+ */
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, MoveRight, BookX, Eye } from 'lucide-react';
