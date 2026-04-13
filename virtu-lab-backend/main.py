@@ -33,7 +33,10 @@ app.add_middleware(
 
 @app.get("/api/health")
 def health():
-    
+    """
+    Checks the health of the API and its core dependencies.
+    Verifies connection to Gemini AI and the database.
+    """
     from agent import get_model
     from db import get_client
     return {
@@ -44,7 +47,10 @@ def health():
 
 @app.get("/api/simulations")
 def get_simulations():
-    
+    """
+    Returns a list of available science simulations across multiple domains.
+    Provides metadata like subject, color themes, and lab keys.
+    """
     return [
         {"name": "Ohm’s Law & Resistance", "subject": "Physics", "color": "bg-blue-500", "shadow": "shadow-blue-500/20", "icon": "/icon_ohm_law.png", "labKey": "ohm-law"},
         {"name": "Projectile Motion", "subject": "Physics", "color": "bg-indigo-500", "shadow": "shadow-indigo-500/20", "icon": "/icon_projectile.png", "labKey": "projectile-motion"},
