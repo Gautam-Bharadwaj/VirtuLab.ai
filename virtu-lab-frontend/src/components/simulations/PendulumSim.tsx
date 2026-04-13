@@ -1,3 +1,10 @@
+/**
+ * Simple Harmonic Motion (Pendulum) Simulation Component
+ * ----------------------------------------------------
+ * Simulates a simple pendulum oscillating under gravity.
+ * Calculates the period (T = 2π√(L/g)) and visualizes real-time 
+ * angular displacement and timing.
+ */
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLabStore } from '../../store/useLabStore';
