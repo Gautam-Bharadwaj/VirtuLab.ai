@@ -1,3 +1,10 @@
+/**
+ * Laboratory Navigation Bar Component
+ * -----------------------------------
+ * Provides global navigation and branding for the VirtuLab interface.
+ * Features a high-accessibility exit control and glassmorphism-inspired 
+ * styling to maintain visual consistency across all simulations.
+ */
 import React from 'react';
 
 export const Navbar: React.FC = () => {
