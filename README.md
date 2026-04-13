@@ -291,3 +291,34 @@ _(Add Postman / Thunder Client screenshots here showing a JSON payload sent and 
 - **Democratizing Education:** Provides high-end practical learning and scientific intuition to rural students at zero marginal cost.
 - **Empowering Educators:** Shifts teaching from "blind instruction" to data-driven pedagogy via the Misconception Heatmap.
 - **NEP 2020 Alignment:** Directly fulfills the government's mandate for immersive, experiential, and equitable digital education infrastructure.
+
+## 18. Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+* Python 3.9+
+* FastAPI
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Gautam-Bharadwaj/VirtuLab.ai.git
+   ```
+2. Install NPM packages for frontend
+   ```sh
+   cd virtu-lab-frontend
+   npm install
+   ```
+3. Install Python dependencies for backend
+   ```sh
+   cd ../virtu-lab-backend
+   pip install -r requirements.txt
+   ```
+4. Set up environment variables in .env files.
