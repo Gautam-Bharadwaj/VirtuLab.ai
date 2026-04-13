@@ -1,3 +1,11 @@
+/**
+ * Landing Page Navigation Component
+ * ---------------------------------
+ * Manages the top-level navigation and global experiment search functionality.
+ * Features a keyboard-shortcut (Cmd/Ctrl+K) accessible Command Palette 
+ * for rapid simulation discovery, responsive mobile views, and 
+ * server-synchronized simulation metadata.
+ */
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Search, X } from 'lucide-react';
