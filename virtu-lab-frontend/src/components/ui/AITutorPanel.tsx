@@ -1,3 +1,10 @@
+/**
+ * AI Tutor Panel Component
+ * ------------------------
+ * Provides an interactive Socratic mentoring interface.
+ * Features automated guidance based on laboratory events (failures/dangers),
+ * live chat with the Lab Mentor, and speech synthesis for accessibility.
+ */
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { useSocraticAI } from '../../hooks/useSocraticAI';
