@@ -1,3 +1,10 @@
+/**
+ * Virtual Cellular Microscope Simulation Component
+ * -----------------------------------------------
+ * Simulates a compound light microscope for biological observation.
+ * Features interactive magnification, fine-focus adjustment with 
+ * dynamic blurring, and crosshair-targeted specimen exploration.
+ */
 import React, { useState } from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
