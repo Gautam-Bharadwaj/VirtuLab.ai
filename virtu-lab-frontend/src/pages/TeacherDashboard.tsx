@@ -1,3 +1,11 @@
+/**
+ * Teacher Analytics Dashboard Component
+ * -------------------------------------
+ * Provides real-time insights into classroom performance.
+ * Features live session monitoring, misconception heatmaps using 
+ * Bar charts, and a sortable student session ledger. 
+ * includes mock-data fallback for offline demonstration and development.
+ */
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
