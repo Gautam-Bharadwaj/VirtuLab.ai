@@ -1,3 +1,10 @@
+/**
+ * Reaction Rate (Chemical Kinetics) Simulation Component
+ * -----------------------------------------------------
+ * Demonstrates collision theory by visualizing molecular collisions.
+ * Factors in Temperature and Concentration to calculate reaction progress,
+ * molecular speed, and effective collision frequency.
+ */
 import React, { useMemo, useState, useEffect } from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
