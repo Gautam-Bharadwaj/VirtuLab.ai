@@ -1,3 +1,11 @@
+/**
+ * Comprehensive Laboratory Report Component
+ * -----------------------------------------
+ * Generates structured scientific reports based on experiment data.
+ * includes aims, observation tables with derived calculations, 
+ * performance analytics (failure history), and curated Viva questions 
+ * for all supported laboratory types.
+ */
 import React, { useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLabStore, LabType } from '../../store/useLabStore';
