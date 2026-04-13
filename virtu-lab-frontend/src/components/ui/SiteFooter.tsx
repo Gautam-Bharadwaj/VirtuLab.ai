@@ -1,3 +1,10 @@
+/**
+ * Main Site Footer Component
+ * --------------------------
+ * Provides secondary navigation and contact information for the platform.
+ * Features a responsive multi-column layout with deep links to laboratory 
+ * categories and professional dashboard portals.
+ */
 import React from 'react';
 
 export const SiteFooter: React.FC = () => {
