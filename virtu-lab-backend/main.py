@@ -1,8 +1,10 @@
 """
 VirtuLab API Main Entry Point
 -----------------------------
-This module defines the FastAPI application and its core endpoints for
-AI hints, progress tracking, and simulation metadata.
+Defines the high-performance FastAPI server orchestrating the VirtuLab platform.
+Handles Socratic AI hint distribution, automated lab report generation, dynamic 
+experimental challenges, and granular student progress synchronization.
+Integrates CORS for secure frontend-backend communication.
 """
 
 from fastapi import FastAPI, HTTPException
