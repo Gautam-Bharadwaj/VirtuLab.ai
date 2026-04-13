@@ -1,8 +1,10 @@
 """
-Database Layer for VirtuLab.ai
-------------------------------
-Handles persistence of student experiment logs and progress tracking using Supabase.
-Includes an in-memory fallback for local development or offline use.
+VirtuLab Backend Database Layer
+-------------------------------
+Manages persistence and retrieval of experimental data and student performance.
+Leverages Supabase (PostgreSQL) for cloud storage with a resilient 
+in-memory fallback for development and isolated testing environments.
+Provides aggregated statistical analysis for the Skill Radar system.
 """
 
 from config import SUPABASE_URL, SUPABASE_KEY
