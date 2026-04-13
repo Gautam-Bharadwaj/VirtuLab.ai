@@ -1,3 +1,11 @@
+/**
+ * Socratic AI Mentoring Hook
+ * -------------------------
+ * Manages the logic for automated laboratory guidance and student interaction.
+ * Features real-time state monitoring for failure detection, "danger zone"
+ * alerting with temporal smoothing, and progressive hint escalation 
+ * based on student behavior.
+ */
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useLabStore, LabType, LabInputs, FailureState } from '../store/useLabStore';
 
