@@ -86,7 +86,19 @@ ASK_AI_TEMPLATES = {
 }
 def generate_hint(simulation: str, trigger: str, failure_name: str = None,
                    context: dict = None, student_message: str = None) -> dict:
+    """
+    Generates a Socratic hint based on the simulation state and trigger type.
     
+    Args:
+        simulation (str): The name/ID of the current simulation (e.g., 'ohm-law').
+        trigger (str): The event that triggered the hint ('failure', 'danger_zone', or 'ask_ai').
+        failure_name (str, optional): The specific error ID for offline lookup.
+        context (dict, optional): Current simulation variables for AI context.
+        student_message (str, optional): The user's specific query for 'ask_ai' mode.
+        
+    Returns:
+        dict: A dictionary containing the 'message', 'trigger' type, and 'level'.
+    """
 
     if trigger == "failure" and failure_name:
         prompt = f
