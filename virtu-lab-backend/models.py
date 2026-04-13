@@ -1,14 +1,28 @@
+"""
+Pydantic Models for VirtuLab API
+--------------------------------
+This module defines the request and response schemas for all API endpoints,
+ensuring type safety and validation.
+"""
 
 from pydantic import BaseModel
 from typing import Optional, Dict, List, Any
 from datetime import datetime
+
 class HintRequest(BaseModel):
+    """
+    Schema for requesting a Socratic hint.
+    """
     simulation: str  # e.g. "ohm-law"
     trigger: str  # "failure" | "danger_zone" | "ask_ai"
     failure_name: Optional[str] = None  # e.g. "OVERLOAD"
     context: Dict[str, Any] = {}  # current param values like {"voltage": 24, "resistance": 10}
     student_message: Optional[str] = None  # student's question (for ask_ai trigger)
+
 class HintResponse(BaseModel):
+    """
+    Schema for returning a Socratic hint.
+    """
     message: str
     trigger: str
     level: int
