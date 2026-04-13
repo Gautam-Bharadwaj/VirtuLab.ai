@@ -153,7 +153,19 @@ RESULT_TEMPLATES = {
 }
 def generate_report_result(simulation: str, observations: list, failures: list,
                             duration: int, score: int) -> str:
+    """
+    Writes a summary paragraph for a lab report based on student performance.
     
+    Args:
+        simulation (str): Name of the simulation.
+        observations (list): Key events/data points observed.
+        failures (list): List of any errors triggered.
+        duration (int): Time spent in the lab (seconds).
+        score (int): Normalized performance score.
+        
+    Returns:
+        str: A generated summary paragraph.
+    """
     prompt = f"""You are a science lab report writer. Write a RESULT paragraph (3-4 sentences) 
 for a {simulation} experiment.
 
@@ -172,7 +184,17 @@ Keep it under 80 words."""
     return RESULT_TEMPLATES.get(simulation, "The observations matched expected theoretical values.")
 
 def generate_challenge(simulation: str, completed: list = None, skill_level: str = "intermediate") -> Optional[dict]:
+    """
+    Generates a new experimental challenge for a given simulation.
     
+    Args:
+        simulation (str): Simulation type.
+        completed (list, optional): IDs of already finished challenges.
+        skill_level (str): Targeted difficulty.
+        
+    Returns:
+        Optional[dict]: A challenge object with targets and validators.
+    """
     prompt = f"""Generate a physics/chemistry lab challenge for the "{simulation}" simulation.
 Skill level: {skill_level}
 Already completed challenge IDs: {json.dumps(completed or [])}
@@ -207,7 +229,16 @@ Return ONLY valid JSON (no markdown) with these exact keys:
     return None
 
 def generate_viva_questions(simulation: str, observations: list = None) -> Optional[List[str]]:
+    """
+    Generates potential viva/interview questions for a simulation.
     
+    Args:
+        simulation (str): Simulation type.
+        observations (list, optional): What the student actually saw.
+        
+    Returns:
+        Optional[List[str]]: A list of ~3 thought-provoking questions.
+    """
     prompt = f
 
     ai_response = call_gemini(prompt, 300)
