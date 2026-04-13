@@ -1,3 +1,10 @@
+/**
+ * Optics Bench (Lens Equation) Simulation Component
+ * ------------------------------------------------
+ * Simulates the formation of images by a thin convex lens.
+ * Calculates image distance (v) and magnification (m) using 
+ * the lens formula: 1/f = 1/v - 1/u.
+ */
 import React from 'react';
 import { useLabStore } from '../../store/useLabStore';
 import { motion, AnimatePresence } from 'framer-motion';
