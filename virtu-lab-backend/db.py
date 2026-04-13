@@ -33,7 +33,16 @@ def get_client():
         return None
 _memory_store: dict = {"experiments": [], "students": {}}
 def save_experiment(record: dict) -> bool:
+    """
+    Saves an experiment session record to Supabase.
+    If Supabase is offline, saves to an in-memory fallback store.
     
+    Args:
+        record (dict): The experiment data to persist.
+        
+    Returns:
+        bool: True if save was successful.
+    """
     record["timestamp"] = record.get("timestamp") or datetime.now(timezone.utc).isoformat()
     client = get_client()
     if client:
@@ -45,8 +54,17 @@ def save_experiment(record: dict) -> bool:
 
     _memory_store["experiments"].append(record)
     return True
+
 def get_student_experiments(student_id: str) -> list:
+    """
+    Retrieves the most recent experiment records for a specific student.
     
+    Args:
+        student_id (str): The unique identifier for the student.
+        
+    Returns:
+        list: A list of experiment log dictionaries.
+    """
     client = get_client()
     if client:
         try:
@@ -61,8 +79,18 @@ def get_student_experiments(student_id: str) -> list:
             print(f"DB read error: {e}")
 
     return [e for e in _memory_store["experiments"] if e.get("student_id") == student_id]
+
 def get_student_stats(student_id: str) -> dict:
+    """
+    Calculates aggregated performance statistics for a student.
+    Determines subject-wise strengths and weaknesses for the skill radar.
     
+    Args:
+        student_id (str): The student identifier.
+        
+    Returns:
+        dict: A statistics object including avg score, time spent, and sim counts.
+    """
     experiments = get_student_experiments(student_id)
     if not experiments:
         return {
