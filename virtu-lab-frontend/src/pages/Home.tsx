@@ -1,3 +1,11 @@
+/**
+ * VirtuLab Landing Page (Home) Component
+ * --------------------------------------
+ * Serves as the primary entry point for the platform.
+ * Features a high-performance interactive hero section, 
+ * categorized laboratory exploration with real-time filtering, 
+ * and a persistent platform info/navigation interface.
+ */
 import { useState } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform, useSpring } from 'framer-motion';
 import { Link } from 'react-router-dom';
