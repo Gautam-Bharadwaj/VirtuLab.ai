@@ -1,3 +1,10 @@
+/**
+ * Simulation Mapping Data
+ * -----------------------
+ * Transforms the central laboratory configuration into a flattened format 
+ * optimized for landing page rendering and catalog exploration.
+ * ensures semantic consistency across subject-based laboratory views.
+ */
 import { LabType, labCatalog } from '../config/labsConfig';
 
 export interface Simulation {
