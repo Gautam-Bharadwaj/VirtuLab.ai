@@ -65,7 +65,10 @@ def get_simulations():
 
 @app.post("/api/ai/hint", response_model=HintResponse)
 def get_hint(req: HintRequest):
-    
+    """
+    Fetches a Socratic hint for a student based on their current lab state.
+    Uses AI if online, otherwise falls back to pre-defined templates.
+    """
     result = generate_hint(
         simulation=req.simulation,
         trigger=req.trigger,
@@ -79,9 +82,13 @@ def get_hint(req: HintRequest):
         level=result.get("level", 1),
         follow_up=result.get("follow_up"),
     )
+
 @app.post("/api/ai/report")
 def get_report(req: ReportRequest):
-    
+    """
+    Generates a scientific lab report summary and viva questions
+    analyzing the student's experimental performance.
+    """
     result_text = generate_report_result(
         simulation=req.simulation,
         observations=req.observations,
@@ -96,9 +103,12 @@ def get_report(req: ReportRequest):
         "result": result_text,
         "viva_questions": viva,
     }
+
 @app.post("/api/ai/challenge")
 def get_challenge(req: ChallengeRequest):
-    
+    """
+    Triggers the generation of a dynamic lab challenge (e.g., target titration pH).
+    """
     challenge = generate_challenge(
         simulation=req.simulation,
         completed=req.completed_challenges,
@@ -110,15 +120,20 @@ def get_challenge(req: ChallengeRequest):
 
 @app.post("/api/progress/save")
 def save_progress(record: ExperimentRecord):
-    
+    """
+    Saves a student's experiment logs and session data to the database.
+    """
     data = record.dict()
     success = save_experiment(data)
     if not success:
         raise HTTPException(status_code=500, detail="Failed to save progress")
     return {"status": "saved", "student_id": record.student_id}
+
 @app.get("/api/progress/{student_id}")
 def get_progress(student_id: str):
-    
+    """
+    Retrieves the skill radar data and experiment history for a specific student.
+    """
     stats = get_student_stats(student_id)
     return stats
 
