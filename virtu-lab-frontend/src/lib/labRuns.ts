@@ -1,3 +1,10 @@
+/**
+ * Lab Runs Persistence Layer
+ * -------------------------
+ * Handles the recording and synchronization of experimental data.
+ * leverages Firestore to store detailed run telemetry, including 
+ * performance scores, parameter configurations, and failure analytics.
+ */
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { firebaseDb, isFirebaseConfigured } from './firebaseClient';
 import { LabType, LabInputs } from '../config/labsConfig';
