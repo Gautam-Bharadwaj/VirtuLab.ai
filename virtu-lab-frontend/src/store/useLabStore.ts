@@ -1,3 +1,11 @@
+/**
+ * Global Laboratory State Store
+ * ----------------------------
+ * Centralized state management using Zustand for the entire VirtuLab platform.
+ * Orchestrates experiment life-cycles, input management, real-time telemetry, 
+ * AI challenge tracking, and multi-modal messaging state. 
+ * includes persistence-ready structures for student laboratory runs.
+ */
 import { create } from "zustand";
 import {
   LabType,
