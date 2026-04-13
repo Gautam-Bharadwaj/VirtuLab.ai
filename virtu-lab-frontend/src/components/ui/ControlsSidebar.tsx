@@ -1,3 +1,11 @@
+/**
+ * Laboratory Controls Sidebar Component
+ * -------------------------------------
+ * Centralized interface for managing experiment parameters.
+ * includes dynamic slider definitions for all supported lab types, 
+ * experiment lifecycle controls (Run/Stop/Reset), and a simulation catalog 
+ * for rapid laboratory switching.
+ */
 import React from 'react';
 import { useLabStore, LabType } from '../../store/useLabStore';
 import { motion } from 'framer-motion';
