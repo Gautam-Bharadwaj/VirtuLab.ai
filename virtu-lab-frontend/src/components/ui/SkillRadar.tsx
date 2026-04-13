@@ -1,3 +1,11 @@
+/**
+ * Skill Radar Visualization Component
+ * -----------------------------------
+ * Provides a multi-dimensional performance analysis for students.
+ * Uses a Radar (Spider) chart to visualize metrics like Procedural Accuracy, 
+ * Safety Awareness, Efficiency, Error Recovery, and Concept Mastery. 
+ * Provides automated AI feedback based on performance trends.
+ */
 import React, { useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
